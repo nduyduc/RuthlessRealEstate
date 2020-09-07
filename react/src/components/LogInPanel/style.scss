@@ -1,0 +1,63 @@
+@import "~App/style/variables";
+
+.login-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 4px;
+    .login-field {
+        margin-bottom: 20px;
+        border: 3px solid rgba(112, 112, 112, 0.6);
+        border-radius: 4px;
+        width: 300px;
+        padding: 9px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        transition: border-color 0.3s ease;
+        &::placeholder {
+            color: rgba(112, 112, 112, 0.6);
+        }
+        &:focus {
+            outline: none;
+            border-color: $dark-color;
+        }
+    }
+
+    .login-message {
+        margin-bottom: 20px;
+        align-self: flex-start;
+        font-weight: bold;
+        margin-left: 10px;
+        &.info {
+            color: $info-color;
+        }
+        &.warning {
+            color: $warning-color;
+        }
+    }
+
+    button {
+        user-select: none;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        width: 324px;
+        font-family: Helvetica;
+        background-color: $light-color;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        &:hover {
+            background-color: $dark-color;
+        }
+    }
+}

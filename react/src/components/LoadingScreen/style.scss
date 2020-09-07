@@ -1,0 +1,42 @@
+@import "~App/style/variables";
+
+.loading-screen {
+    background-color: $light-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    user-select: none;
+    .loading-icon {
+        background-image: url("/assets/icons/loading.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        animation: icon-rotation 2s linear 0s infinite;
+    }
+    .loading-text {
+        font-size: 18px;
+        color: white;
+        letter-spacing: 2px;
+        animation: text-blinking 2s linear 0.5s infinite;
+    }
+}
+
+@keyframes icon-rotation {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes text-blinking {
+    0% {opacity: 1;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1;}
+}

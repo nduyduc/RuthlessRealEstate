@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "api": ["./api/index.js"],
+            "api/*": ["./api/*"],
+            "components/*": ["./components/*"],
+            "containers/*": ["./containers/*"],
+            "layout/*": ["./layout/*"],
+            "App": ["./App/index.js"],
+            "App/*": ["./App/*"]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "variables";
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=f3fb4a04-ad55-43ea-ab65-b7962ba7240c");
+@font-face{
+    font-family: $logo-font;
+    src:url("/assets/fonts/15d1c987-ea31-4b08-8926-946071df053e.eot?#iefix") format("eot"),url("/assets/fonts/92949d3f-732b-4f08-a446-a9fa72512d77.woff") format("woff"),url("/assets/fonts/8f64645b-e284-4628-b7b3-cc9f36bc509b.ttf") format("truetype");
+}
+@font-face{
+    font-family: $normal-font;
+    src:url("/assets/fonts/37d9e911-0350-4505-a092-d4bb68731be9.eot?#iefix") format("eot"), url("/assets/fonts/df9b49fd-a69d-4b3c-9502-e148796c36ba.woff") format("woff"),url("/assets/fonts/2547c32b-e98b-487e-b645-8f51db8ae92f.ttf") format("truetype");
+}

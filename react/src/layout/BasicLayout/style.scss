@@ -1,0 +1,9 @@
+@import "~App/style/variables";
+
+#basic-layout {
+    display: flex;
+    flex-direction: row;
+    #basic-side-bar {
+        width: $sidebar-width;
+    }
+}
